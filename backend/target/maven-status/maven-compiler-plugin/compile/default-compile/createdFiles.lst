@@ -1,0 +1,11 @@
+com\kisakes\service\JwtService.class
+com\kisakes\service\UserService.class
+com\kisakes\controller\AuthController$LoginRequest.class
+com\kisakes\model\User$Role.class
+com\kisakes\model\User$UserBuilder.class
+com\kisakes\config\SecurityConfig.class
+com\kisakes\KisakesBackendApplication.class
+com\kisakes\repository\UserRepository.class
+com\kisakes\controller\AuthController$RegisterRequest.class
+com\kisakes\model\User.class
+com\kisakes\controller\AuthController.class
