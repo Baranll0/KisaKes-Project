@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# KısaKes - Video İçerik Özetleme ve Analiz Platformu
 
-## Getting Started
+KısaKes, video içeriklerini otomatik olarak analiz eden, özetleyen ve çeşitli formatlarda çıktılar sunan yapay zeka destekli bir platformdur.
 
-First, run the development server:
+## 🚀 Özellikler
+
+### AI Destekli Video İşleme
+- YouTube videolarından otomatik ses indirme
+- Whisper AI ile yüksek doğrulukta konuşma tanıma
+- GPT-3.5 ile akıllı içerik özetleme
+- Otomatik zaman damgalı bölümler
+- Akıllı soru-cevap çiftleri oluşturma
+- Çoklu dil desteği ile otomatik çeviri
+
+### Çıktı Formatları
+- PDF formatında detaylı raporlar
+- Word belgesi olarak düzenlenmiş içerik
+- Zaman damgalı bölüm listesi
+- Soru-cevap formatında öğrenme materyali
+
+## 🔮 Gelecek Özellikler
+
+### AI Geliştirmeleri
+- Daha gelişmiş özetleme algoritmaları
+- Video içi önemli anların otomatik tespiti
+- Duygu analizi ve ton tespiti
+- Anahtar kelime ve konu çıkarma
+- Görsel içerik analizi ve tanıma
+
+### Platform Geliştirmeleri
+- Web arayüzü ile kolay kullanım
+- Toplu video işleme desteği
+- Özelleştirilebilir çıktı formatları
+- API entegrasyonu
+- Kullanıcı hesapları ve geçmiş işlemler
+
+## 🛠️ Teknik Altyapı
+
+- Python tabanlı backend
+- Whisper AI entegrasyonu
+- OpenAI GPT-3.5 API
+- Google Translate API
+- PDF ve Word dosya işleme
+- YouTube-DL entegrasyonu
+
+## 📋 Gereksinimler
+
+- Python 3.8+
+- FFmpeg
+- OpenAI API anahtarı
+- İnternet bağlantısı
+
+## 🔧 Kurulum
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pip install -r requirements.txt
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎯 Kullanım
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```python
+from kisakes.ai.video_processor import VideoProcessor
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+processor = VideoProcessor()
+result = processor.process_video("YOUTUBE_URL", target_lang="tr")
+```
 
-## Learn More
+## 📝 Lisans
 
-To learn more about Next.js, take a look at the following resources:
+MIT License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🤝 Katkıda Bulunma
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Fork yapın
+2. Feature branch oluşturun (`git checkout -b feature/amazing-feature`)
+3. Değişikliklerinizi commit edin (`git commit -m 'feat: Add amazing feature'`)
+4. Branch'inizi push edin (`git push origin feature/amazing-feature`)
+5. Pull Request oluşturun 
